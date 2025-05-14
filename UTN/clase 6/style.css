@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box; /* SIEMPRE SE PONE */
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    width: 100vw; /* viwport width  100vw = 100% del ancho del viwport*/
+    height: 100vh; /* viwport height */
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Todo esto funciona si hay espacio sobrante, si no lo hay, no funciona  */
+    color: white;
+    gap: 20px; /* espaciado entre hijos */
+    padding: 0 40px;
+    align-items: center; /* Alinear los items en el eje Y. */
+    /* 
+    ROW: 
+        justify-content:horizontal
+        align-items:vertical 
+    COLUMN
+        justify-content:vertical
+        align-items:horizontal 
+        */
+}
+.hijo{
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    border:1px black solid;
+    border-radius: 10px;
+}

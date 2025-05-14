@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    background-color: yellow;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.hijo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: violet;
+    /* Es el valor que viene por defecto */
+    /* position: static; */
+    z-index: 2;
+}
+.hijo-2{
+    background-color: red;
+    /* Al usar position:relative, se activan 4 propiedades:
+    TOP. mas importante
+    BOTTOM. menos importante
+    LEFT. mas importante
+    RIGHT. menos importante 
+     */
+    position: relative;
+    /* de la parte superior de la posision original de mi elemento, me voy a mover x cantidad de px */
+    top: 100px;
+    right: 100px;
+    /* se pueden superponer los elementos  */
+    /* el z-index te dice quien esta arriba y quien esta abajo, el numero que sea mas alto, va a estar por arriba del menor  */
+    z-index: 1;
+}

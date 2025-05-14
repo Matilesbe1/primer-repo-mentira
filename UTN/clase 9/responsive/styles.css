@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+}
+/* media queries son condiciones para css
+EJEMPLO:
+a partir de los 1000px de ancho, quiero que hagas cierto codigo css
+para menos de 1000px de ancho, quiero que hagas otro codigo css
+*/
+/* a partir de valores inferiores a 1000px pasara x cosa */
+@media screen and (max-width:1000px){
+    body{
+        background-color: blue;
+    }
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: red;
+}
+h1{
+    color: white;
+    background-color: brown; 
+    font-size: 20px;
+}
+h2{
+    color: aqua;
+    font-size: 50px;
+}
+.chiquito{
+    font-size: 20px;
+}
+.texto-especial{
+text-decoration: line-through;
+}

@@ -1,0 +1,84 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+
+:root{
+    --color-secundario-500:#eff6ff;
+    --color-principal-500:#f5f5f5;
+    --color-principal-400:#fafafa;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.big-letter{
+    font-size: 20px;
+}
+.medium-letter{
+    font-size: 14px;
+}
+.small-letter{
+    font-size: 12px;
+}
+body{
+    background-color: white;
+    overflow: scroll;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 38px 32px;
+}
+/* .right-section{
+    text-align: right;
+}
+.right-text{
+    padding: 8px 20px;
+    border:1px solid black;
+    border-radius: 14px;
+    background-color: var(--color-secundario-500);
+    margin-left: 1450px;
+} */
+.devolution-section{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.devolution-section__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-principal-500);
+    padding: 6px 14px ;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 50px;
+}
+
+.devolution-section__header button{
+    border: none;
+    margin-right: 15px;
+}
+.bi-play-circle-fill {
+    border-left: 1px solid rgba(128, 128, 128, 0.518);
+    padding-left: 10px;
+}
+.devolution-section__main{
+    background-color: var(--color-principal-400);
+}
+.question{
+    background-color: #673de6;
+    position: fixed;
+    margin: 15px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    bottom: 0;
+    right: 0;
+    color: white;
+    
+}

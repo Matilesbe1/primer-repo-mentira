@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactate con Nosotros</title>
+</head>
+<body>
+    <a href="./index.html">Volver a Inicio</a>
+    <h1>Contactanos</h1>
+    <a href="./index.html#chiste">Ir al chiste de index</a>
+    <h2>Formulario</h2>
+    <form action="">
+        <label for="nombre">Ingresa tu nombre:</label> <!-- una etiqueta que sirve para indicar de que se va a tratar el input -->
+        <input type="text" placeholder="Matias Lesbegueris" id="nombre" name="nombre">
+
+        <label for="edad">Ingresa tu edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="100"> <!-- el ID y el FOR sirven para conectarse -->
+    
+        <label for="fechadenacimiento">ingrese su fecha de nacimiento </label>
+        <input type="datetime" id="fechadenacimiento "> <!-- Buscar en el mdn de google -->
+    
+        <input type="submit" value="contactar"><!-- escribe ENVIAR depende el idioma de tu computadora, salvo que pongas VALUE-->
+        <button type="submit">Contactar</button> <!-- podes escribir lo que tiene adentro, ponerlo en un idioma especifico o una imagen -->
+    
+        <label for="contraseña">ingresa tu contraseña:</label>
+        <input type="password" id="contraseña">
+        <button type="button">Mostrar</button>
+
+        <span>Cual es tu comida favorita?</span>
+        <label for="pizza-preferido">Pizza</label>
+        <input type="radio" id="pizza-preferido" name="comida-preferido">
+        <label for="sushi-preferido">Sushi</label>
+        <input type="radio" id="sushi-preferido" name="comida-preferido"><!-- ya que tienen igual el name y el radio esta diseñado para que se haga tilde en una sola opcion, solo deja 1 opcion -->
+        <label for="ñoquis-preferido">Ñoquis</label>
+        <input type="radio" id="ñoquis-preferido" name="comida-preferido">
+
+        <span>Que comida conoces?</span>
+        <label for="pizza-conocido">Pizza</label>
+        <input type="checkbox" id="pizza-conocido" name="comida-conocido">
+        <label for="sushi-conocido">Sushi</label>
+        <input type="checkbox" id="sushi-conocido" name="comida-conocido"><!-- ya que tienen igual el name y el checkbox esta diseñado para que se haga tilde en mas de una sola opcion, deja hacer check en cuantas opciones quieras -->
+        <label for="ñoquis-conocido">Ñoquis</label>
+        <input type="checkbox" id="ñoquis-conocido" name="comida-conocido">
+
+        <label for="pais">Selecciona tu pais</label>
+        <select name="pais" id="pais">
+            <option value="AR">argentina</option>
+            <option value="FR">Francia</option>
+            <option  value="BR" selected>Brazil</option> <!-- selected para que aparezca como ya escrito aunque este abajo de todo -->
+        </select>
+
+        <label for="mensaje">Escribi un mensaje para nosotros</label>
+        <textarea name="mensaje" id="mensaje" cols="5" rows="10" maxlength="50" required></textarea> <!-- maxlength= cantidad maxima de caracteres -->
+
+
+    </form>
+</body>
+</html>

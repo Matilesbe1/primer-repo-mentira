@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.buscador{
+    /*          eje-x eje-y  blur  spread  color*/
+    box-shadow: 0px    2px    2px   0      black;
+}
+
+
+.padre{
+    background-color: yellow;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    /* esto se pone para que el 0 0 del hijo con position absolute, sea igual a la del padre, nomralmente se pone position relative */
+    position: relative;
+}
+.hijo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: violet;
+    z-index: 1;
+}
+.hijo-2{
+    background-color: red;
+   /*  position: absolute; */
+    /* el 1 y 3 cumplen su espacio y gap, pero el 2 se superpone en ese gap */
+    /* el absolute calcula su 0 0 desde la vista o desde el elemento padre mas cercano distinto a static */
+    /* position: fixed; */
+   /* no ocupa su posicion en la pagina y se ajusta en la posision que le des, parecido al absolute */
+    z-index: 1;
+    /* parecido al fixed pero ocupa su espacion en la pantalla, esto se usa mas en los navegadores */
+    position: sticky;
+}
+

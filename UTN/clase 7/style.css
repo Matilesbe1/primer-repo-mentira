@@ -1,0 +1,15 @@
+:root{
+    
+    --color-principal-400:#f4f5ff
+    --color-principal-500:#673de5  /* todas estas son variables, mientras mas grandes, mas oscuro el color */
+    --color-principal-600:
+    /* Forma de gusrdarnos un color, es una variable de css. SIEMPRE SE USA CON DOBLE --. Es una buena practica.*/
+}
+
+h2{
+    color: var(--color-principal);
+    /* Siempre que el color principal cambie, esta variable tambien */
+}
+h3{
+    color: var(--color-principal-400); /* este color va a ser mas clarito que el principal */
+}

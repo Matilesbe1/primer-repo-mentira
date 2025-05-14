@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.418) ;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.header-left-content{
+    display: flex;
+}
+
+.btn-menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header-left-content nav{
+        display: none;
+    }
+    .header-right-content{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+    }
+}

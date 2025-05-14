@@ -1,0 +1,8 @@
+.title{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    background-color: aqua;
+}
+.sub--title2{ /* cuando se quiere hacer una modificacion al elemento que ya esta personalizado, se pone con "--" */
+    background-color: blueviolet;
+}
